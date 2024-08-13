@@ -82,3 +82,7 @@ main();
 
 module.exports = { isPrime, findFirstOfFourConsecutive };
 
+// Output solution 1: 134043
+// Total time taken: 61.6533 milliseconds
+// Total loop count: 9473681
+// Cost total :   0.0000020551100000000003
