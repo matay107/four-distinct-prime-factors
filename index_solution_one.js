@@ -1,25 +1,25 @@
 var loopCount = 0;  
 
 function isPrime(n) {
-  if (n <= 1) return false;
+  if (n <= 1) return false; 
 
   for (let i = 2; i <= n / 2; i++) {
     loopCount++;
-    if (n % i === 0) return false;
+    if (n % i === 0) return false; 
   }
   return true;
 }
 
 function getPrimeFactors(n) {
   let factors = new Set();
-  for (let i = 2; i <= n; i++) {
+  for (let i = 2; i <= n; i++) { 
     loopCount++;
-    while (n % i === 0) {
+    while (n % i === 0) {  
       loopCount++;
-      if (isPrime(i)) {
-        factors.add(i);
+      if (isPrime(i)) { 
+        factors.add(i); 
       }
-      n /= i;
+      n /= i; 
     }
   }
   return factors;
@@ -30,11 +30,11 @@ function findFirstOfFourConsecutive() {
   let consecutive = 0;
 
 
-  while (true) {
-    loopCount++;  // Increment loop counter
-    let factors = getPrimeFactors(i);
+  while (true) { 
+    loopCount++; 
+    let factors = getPrimeFactors(i);  
 
-    if (factors.size === 4) {
+    if (factors.size === 4) { /
       consecutive++;
       if (consecutive === 4) {
   
@@ -84,5 +84,8 @@ module.exports = { getPrimeFactors, isPrime, findFirstOfFourConsecutive };
 
 // Output solution 1: 134043
 // Total time taken: 6200.2898000000005 milliseconds
-// Total loop count: 2079574576
+// Total loop count: 2,079,574,576
 // Cost total :   0.00020667632666666668
+
+
+1.อธิบายเป็น จากที่ได้รับโจทย์มาคือการหาค่าค่า
